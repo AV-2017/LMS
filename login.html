@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>DOP SignIn</title>
+</head>
+<body>
+  
+  <div class="home-section">
+    <nav>
+            <span class="bannerImage">
+                <img src="Images/mainLogo.jpg" />
+            </span>
+        </div>
+    </nav>
+</div>
+
+  <div class="video">
+    <video autoplay loop muted>
+      <source src="images/bg.m4v" type="video/mp4">
+    </video>
+  </div>
+    <div class="wrapper">
+      <section class="form signup">
+        <header> SignIn </header>
+        <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
+          <div class="field input">
+            <label>Email Address</label>
+            <input type="text" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="field input">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter new password" required>
+            <i class="fas fa-eye"></i>
+          </div>
+          <div class="field button">
+            <input type="submit" name="submit" value="Sign In">
+          </div>
+        </form>
+        <div class="link">Don't have an account? <a href="signup.html">SignUp</a></div>
+      </section>
+    </div>
+
+    <script>
+
+          const pswrdField = document.querySelector(".form input[type='password']"),
+          toggleIcon = document.querySelector(".form .field i");
+
+          toggleIcon.onclick = () =>{
+            if(pswrdField.type === "password"){
+              pswrdField.type = "text";
+              toggleIcon.classList.add("active");
+            }else{
+              pswrdField.type = "password";
+              toggleIcon.classList.remove("active");
+            }
+          }
+
+    </script>
+</body>
+</html>

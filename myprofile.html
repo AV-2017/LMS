@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="css/myprofile.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-home'></i>
+            <span class="logo_name">DOP</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="myprofile.html">
+                    <i class='bx bxs-user'></i>
+                    <span class="links_name">My Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="CourseList.html">
+                    <i class='bx bx-book'></i>
+                    <span class="links_name">Courses List</span>
+                </a>
+            </li>
+            <li>
+                <a href="Addcourses.html">
+                    <i class='bx bx-add-to-queue'></i>
+                    <span class="links_name">Add Courses</span>
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class='bx bx-log-out' ></i>
+                    <span class="links_name">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+                <span class="bannerImage">
+                    <img src="Images/mainLogo.png" /> 
+                </span>
+                <span class="dop">Directorate of Personnel</span>
+                <span class="adminSitetext"> Admin Site</span>
+            </div>
+        </nav>
+    </section>
+
+    <div class="pagecard">
+        <div class="card">
+            <span class="profileimage">
+                <img src="Images/Profile.jpg">
+            </span>
+            <h2>Name of the Admin</h2>
+            <br>
+            <p class="title"> Rank</p>
+            <p class="title"> Phone Number</p>
+            <p class="title"> Desigination</p>
+            <p class="title"> Email</p>
+            <p class="title"> Location</p>
+        </div>
+    </div>
+
+    <p>
+        <span class="background">
+            <img src="Images/vkd.jpg" /> 
+        </span>
+    </p>
+
+
+<script>
+
+    let sidebar = document.querySelector(".sidebar");
+
+    let sidebarBtn = document.querySelector(".sidebarBtn");
+
+
+    sidebarBtn.onclick = function () {
+
+        sidebar.classList.toggle("active");
+        if (sidebar.classList.contains("active")) {
+            sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        }
+        else
+            sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+    }
+</script>
+</body>
+</html>
