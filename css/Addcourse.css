@@ -261,23 +261,41 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+input[type="button"] {
+    width: 150px;
+    height: 50px;
+    background-color: #0311cc;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-content: center;
+    border: none;
+    cursor: pointer;
+}
+
 .confirm {
     font-size: 25px;
     position: fixed;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 10px;
+    padding-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
     background-color: #ffffff;
-    height: 330px;
+    height: 220px;
     border-radius: 10px;
+    bottom: -5%;
 }
-
 
 .confirmButtons
 {
     width: 30px;
+    margin-left: 200px;
     margin-bottom: 10px;
+    color: white;
     font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
@@ -288,20 +306,17 @@ input[type="submit"] {
     flex-wrap: wrap;
 }
 
-.confirmText{
-    padding-bottom: 10px;
-    margin-bottom: 10px ;
-    padding-top: 5px;
-}
 
 .col-cancel-btn{
     position: absolute;
-    margin-left: 310px;
+    margin-left: 110px;
+    margin-top: 10px;
 }
 
 .col-yes-btn{
     position: absolute;
-    margin-left: 110px;
+    margin-left: -80px;
+    margin-top: 10px;
 }
 
 /* Responsive Media Query */
@@ -389,6 +404,3 @@ input[type="submit"] {
         width: calc(100% - 60px);
     }
 }
-
-
-
