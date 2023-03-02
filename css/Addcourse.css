@@ -277,17 +277,15 @@ input[type="button"] {
 
 .confirm {
     font-size: 25px;
-    position: fixed;
+    position: absolute;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 10px;
     padding-top: 20px;
-    margin-top: 10px;
     margin-bottom: 10px;
     background-color: #ffffff;
     height: 220px;
     border-radius: 10px;
-    bottom: -5%;
 }
 
 .confirmButtons
