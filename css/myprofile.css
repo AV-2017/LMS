@@ -201,8 +201,6 @@ nav .sidebar-button i {
   }
 
 
-
-
 /* End of admin profile */
 
 /* Background */
@@ -308,10 +306,38 @@ nav .sidebar-button i {
     }
 }
 
-/* End of Add course Page */
+@media (max-height:900px) {
+
+    
+.pagecard {
+    transition: 0.3s;
+    display: flex;
+    position: fixed;
+    width: 500px;
+    margin-top: 150px;
+    text-align: center;
+    justify-content: space-between ;
+    font-size: 25px;
+    left: 40%;
+    right: auto;
+    z-index: 1;
+    opacity: 80%;
+}
+
+.pagecard .profileimage{
+    height: 30px;
+    width: auto;
+    align-items: center;
+}
+
+.profileimage img {
+    border-radius: 50%;
+}
+
+}
 
 .row{
     padding-top: 100px;
 }
-/* Start of My Profile page */
+
 

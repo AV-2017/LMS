@@ -3,17 +3,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <title>DOP SignUp</title>
 </head>
 <body>
-  <div class="video">
-    <video autoplay loop muted>
-      <source src="images/bg.m4v" type="video/mp4">
-    </video>
-  </div>
-
+  
   <div class="home-section">
     <nav>
             <span class="bannerImage">
@@ -27,7 +22,6 @@
       <section class="form signup">
         <header> SignUp </header>
         <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
-          <div class="error-text">This is an Error. </div>
           <div class="name-details">
             <div class="field input">
               <label>First Name</label>
@@ -38,9 +32,111 @@
               <input type="text" name="lname" placeholder="Last name" required>
             </div>
           </div>
+
+   
           <div class="field input">
             <label>Email Address</label>
             <input type="text" name="email" placeholder="Enter your email address" required>
+          </div>
+          <div class="rank-gender">
+            <div class="field input">
+              <label>Branch</label>
+              <select>
+                <option value="Option 1" disabled selected hidden>Select your branch</option>
+                <option value="Option 2">ELECTRICAL</option>
+                <option value="Option 3">ENGINEERING</option>
+                <option value="Option 4">ATC</option>
+                <option value="Option 5">EXECUTIVE</option>
+                <option value="Option 6">EDUCATION</option>
+                <option value="Option 7">LOGISTICS</option>
+            </select>
+
+              
+            </div>
+            <div class="field input">
+              <label>Gender</label>
+              <select>
+                <option value="Option 1" disabled selected hidden> Select your gender </option>
+                <option value="Option 2">Male</option>
+                <option value="Option 3">Female</option>
+            </select>
+            </div>
+          </div>
+
+          <div class="rank-gender">
+            <div class="field input">
+              <label>Medicals</label>
+              <select>
+                <option value="Option 0" disabled selected hidden> Select your status </option>
+                <option value="Option 1">S1A1</option>
+                <option value="Option 2">S2A2</option>
+                <option value="Option 3">S1A2</option>
+                <option value="Option 3">S2A2</option>
+            </select>
+
+              
+            </div>
+            <div class="field input">
+              <label>Qualification</label>
+              <select>
+                <option value="Option 1" disabled selected hidden> Select your qualification </option>
+                <option value="Option 1">B.TECH(CSE)</option>
+                <option value="Option 2">B.TECH(IT)</option>
+                <option value="Option 3">B.TECH(ECE)</option>
+                <option value="Option 4">B.TECH(MECH)</option>
+                <option value="Option 5">BBA</option>
+                <option value="Option 6">BCA</option>
+                <option value="Option 7">MCA</option>
+                <option value="Option 8">MBA</option>
+                <option value="Option 9">MTECH</option>
+                <option value="Option 10">PHD</option>
+                <option value="Option 11">Other</option>
+            </select>
+            </div>
+          </div>
+
+          <div class="rank-gender">
+            <div class="field input">
+              <label>Field of location</label>
+              <select>
+                <option value="Option 1" disabled selected hidden> Select your field</option>
+                        <option value="Option 2">STAFF POSTING </option>
+                        <option value="Option 3">INSTRUCTOR</option>
+                        <option value="Option 4">SUBMARINE</option>
+                        <option value="Option 5">SPECILIASED DIVER</option>
+                        <option value="Option 6">AFLOAT POSTING</option>
+                        <option value="Option 7">SHIP POSTING</option>
+            </select>
+
+              
+            </div>
+            <div class="field input">
+              <label>Posting</label>
+              <select>
+                <option value="Option 1" disabled selected hidden> Select your location </option>
+                <option value="Option 2">INS KALAVARI</option>
+                <option value="Option 3">INS VELA</option>
+                <option value="Option 4">INS ZAMORIN</option>
+                <option value="Option 5">INS VALSURA</option>
+                <option value="Option 6">INS SHIVAJI</option>
+                <option value="Option 7">INS INDIA</option>
+                <option value="Option 8">INS DELHI</option>
+                <option value="Option 9">INS VIKRANT</option>
+                <option value="Option 10">INS VIKRAMADITYA</option>
+            </select>
+            </div>
+          </div>
+
+          <div class="rank-gender">
+            <div class="field input">
+              <label>Age</label>
+              <input type="number" class="textbox1" placeholder="Age in years" min="20" max="70">
+              
+            </div>
+            <div class="field input">
+              <label>Service Duration</label>
+              <input type="number" class="textbox1" placeholder="Service in years" min="1" max="40">
+            </div>
           </div>
           <div class="field input">
             <label>Password</label>
@@ -54,6 +150,21 @@
         <div class="link">Already have an account? <a href="login.html">SignIn</a></div>
       </section>
     </div>
-        <script src="./javascript/pass-show-hide.js"></script>
+    <script>
+
+      const pswrdField = document.querySelector(".form input[type='password']"),
+      toggleIcon = document.querySelector(".form .field i");
+
+      toggleIcon.onclick = () =>{
+        if(pswrdField.type === "password"){
+          pswrdField.type = "text";
+          toggleIcon.classList.add("active");
+        }else{
+          pswrdField.type = "password";
+          toggleIcon.classList.remove("active");
+        }
+      }
+
+</script>
   </body>
 </html>
