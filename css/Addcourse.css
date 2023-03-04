@@ -319,6 +319,7 @@ input[type="button"] {
     margin-top: 10px;
 }
 
+
 /* Responsive Media Query */
 @media (max-width: 1240px) {
     .sidebar {
