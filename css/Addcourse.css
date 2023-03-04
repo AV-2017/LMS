@@ -434,3 +434,67 @@ input[type="button"] {
     }
     
 }
+
+@media (max-width: 1440px) {
+
+    .pagecard {
+        transition: 0.3s;
+        width: auto;
+        padding-right: 10%;
+        margin-left: 5%;
+        border-radius: 5px;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+
+    .confirm {
+        font-size: 25px;
+        position: absolute;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #ffffff;
+        height: 150px;
+        border-radius: 10px;
+        top: 125%;
+    }
+    
+}
+
+
+
+@media (max-height: 1366px) {
+
+    .pagecard {
+        transition: 0.3s;
+        width: auto;
+        padding-right: 10%;
+        margin-left: 5%;
+        border-radius: 5px;
+        justify-content: space-between;
+        background-color: white;
+        height: 1080px;
+
+    }
+
+
+    .confirm {
+        font-size: 25px;
+        position: absolute;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #ffffff;
+        height: 150px;
+        border-radius: 10px;
+        top: 1030px;
+    }
+    
+}
