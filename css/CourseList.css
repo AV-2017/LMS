@@ -24,7 +24,7 @@ html {
   .container {
     width: 100%;
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 150px;
     margin-right: auto;
     margin-left: 23%; }
     @media (min-width: 576px) {
@@ -123,24 +123,6 @@ html {
     font-weight: normal;
     background: #f8f9fd;
     color: gray; }
-  
-  a {
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-    color: #1089ff; }
-    a:hover, a:focus {
-      text-decoration: none !important;
-      outline: none !important;
-      -webkit-box-shadow: none;
-      box-shadow: none; }
-  
-  h1, h2, h3, h4, h5,
-  .h1, .h2, .h3, .h4, .h5 {
-    line-height: 1.5;
-    font-weight: 400;
-    font-family: "Poppins", Arial, sans-serif;
-    color: #000; }
   
   .bg-primary {
     background: #1089ff !important; }
